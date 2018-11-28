@@ -1,6 +1,8 @@
 Creating a Swift MacDown Plug-In
 ================================
 
+> 🔥 Looking for Objective-C? Check out [macdown-gistit](https://github.com/MacDownApp).
+
 So you want to create your own Swift [MacDown](https://macdown.uranusjr.com) plug-in? Let's jump right in.
 
 1. Create a new Xcode Project using the _Bundle_ macOS template.
@@ -91,7 +93,7 @@ So you want to create your own Swift [MacDown](https://macdown.uranusjr.com) plu
 	            else { return false }
 	
 	        let mpDocument = MPDocumentWrapper(mpDocument: currentDocument)
-	        print(mpDocument.markdown)
+	        mpDocument.updateEditorMarkdown(to: "Hello. 👋\n" + mpDocument.markdown)
 	        return true
 	    }
 	

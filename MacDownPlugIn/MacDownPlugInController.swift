@@ -32,7 +32,7 @@ public class MacDownPlugInController: NSObject {
             else { return false }
 
         let mpDocument = MPDocumentWrapper(mpDocument: currentDocument)
-        print(mpDocument.markdown)
+        mpDocument.updateEditorMarkdown(to: "Hello. 👋\n" + mpDocument.markdown)
         return true
     }
 
