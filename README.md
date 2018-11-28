@@ -98,7 +98,7 @@ So you want to create your own Swift [MacDown](https://macdown.uranusjr.com) plu
 	}
    ```
    
-   But what is this `MPDocumentWrapper` nonsense? Great question. It's a Swift wrapper around MacDown's [`MPDocument`](https://github.com/MacDownApp/macdown/blob/master/MacDown/Code/Document/MPDocument.m) class that provides us with some incomplete interoperability. You can find the `MPDocumentWrapper` source file [here](https://raw.githubusercontent.com/chriszielinski/MacDown-Swift-Plug-In/master/MacDownPlugIn/Models/MPDocumentWrapper.swift).
+   But what is this `MPDocumentWrapper` nonsense? Great question. It's a Swift wrapper around MacDown's [`MPDocument`](https://github.com/MacDownApp/macdown/blob/master/MacDown/Code/Document/MPDocument.m) class that provides us with some incomplete interoperability. You can find the `MPDocumentWrapper` source file [here](https://github.com/chriszielinski/MacDown-Swift-Plug-In/blob/master/MacDownPlugIn/Models/MPDocumentWrapper.swift).
    
 7. The **final** and most **important** step is to set the plug-in's _principal class_. Select the _info.plist_ file, and set the _Principal class_ field to the name of the class we created in the previous step.
 
