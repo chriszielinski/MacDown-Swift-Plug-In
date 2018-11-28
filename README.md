@@ -1,7 +1,7 @@
 Creating a Swift MacDown Plug-In
 ================================
 
-> 🔥 Looking for Objective-C? Check out [macdown-gistit](https://github.com/MacDownApp).
+> 🔥 Looking for Objective-C? Check out [macdown-gistit](https://github.com/MacDownApp/macdown-gistit).
 
 So you want to create your own Swift [MacDown](https://macdown.uranusjr.com) plug-in? Let's jump right in.
 
