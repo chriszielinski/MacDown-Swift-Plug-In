@@ -20,7 +20,8 @@ So you want to create your own Swift [MacDown](https://macdown.uranusjr.com) plu
 3. Next step is to modify the build settings, so go ahead and find your way there. The only things we're interested in are: 
 	* Setting the `ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES` to `Yes`.
 	* Setting the `INSTALL_PATH` to `$(USER_LIBRARY_DIR)/Application Support/MacDown/PlugIns/`, which is where the MacDown plug-ins are located.
-
+   <br/>
+   
    > 🤔 **Why:** The `ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES` property ensures the required Swift standard libraries are embedded in our Swift plug-in, and we'll use the `INSTALL_PATH` in a post-action build script.
    
    <p align="center">
@@ -97,7 +98,7 @@ So you want to create your own Swift [MacDown](https://macdown.uranusjr.com) plu
 	}
    ```
    
-   But what is this `MPDocumentWrapper` nonsense? Great question. It's a Swift wrapper around MacDown's [`MPDocument`](https://github.com/MacDownApp/macdown/blob/master/MacDown/Code/Document/MPDocument.m) class that provides us with some incomplete interoperability. You can find the source file [here]().
+   But what is this `MPDocumentWrapper` nonsense? Great question. It's a Swift wrapper around MacDown's [`MPDocument`](https://github.com/MacDownApp/macdown/blob/master/MacDown/Code/Document/MPDocument.m) class that provides us with some incomplete interoperability. You can find the `MPDocumentWrapper` source file [here](https://raw.githubusercontent.com/chriszielinski/MacDown-Swift-Plug-In/master/MacDownPlugIn/Models/MPDocumentWrapper.swift).
    
 7. The **final** and most **important** step is to set the plug-in's _principal class_. Select the _info.plist_ file, and set the _Principal class_ field to the name of the class we created in the previous step.
 
