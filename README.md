@@ -30,7 +30,7 @@ So you want to create your own Swift [MacDown](https://macdown.uranusjr.com) plu
        <img src="./readme-assets/3-build-settings.png" alt="Build Settings">
    </p>
 
-4. Now we'll modify our main scheme. ⌥ (OPTION) + click on the scheme, select the _Run_ action, and set the executable to your local `MacDown.app` (in the _Executable_ pop-up button's menu, select _Other..._ and navigate to and select the app).
+4. Now we'll modify our main scheme. Hold <kbd>⌥ option</kbd> + click on the scheme, select the _Run_ action, and set the executable to your local `MacDown.app` (in the _Executable_ pop-up button's menu, select _Other..._ and navigate to and select the app).
 
    > 🔥 This will allow us to debug the plug-in using Xcode's Debugger.
 
@@ -108,7 +108,7 @@ So you want to create your own Swift [MacDown](https://macdown.uranusjr.com) plu
        <img src="./readme-assets/7-principal-class.png" alt="Set the Principal Class in the Info.plist">
    </p>
    
-   Hit that beautiful play (run) button or ⌘ + R, and you should be good to go.
+   Hit that beautiful play (run) button or <kbd>⌘ command</kbd> + <kbd>R</kbd>, and you should be good to go.
    
    <p align="center">
        <img src="./readme-assets/8-macdown-plugin.png" alt="MacDown Plug-In Menu">
